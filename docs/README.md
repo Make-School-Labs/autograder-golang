@@ -11,7 +11,7 @@ _Gradescope autograder for BEW 2.5: Patterns &amp; Practices in Strongly Typed L
 ## Integrating with Gradescope
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Make-School-Labs/autograder-golang/master/docs/config.png">
+  <img src="https://github.com/droxey/autograder-golang/blob/master/docs/config.png">
 </p>
 
 ## Deploying or Updating an Autograder

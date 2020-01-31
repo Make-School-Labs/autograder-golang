@@ -10,7 +10,7 @@ LABEL VERSION="1.0"
 ARG GOLANG_VERSION=1.13.7
 
 # Install Go and create directory structure.
-RUN DEBIAN_FRONTEND=noninteractive apt-get update -qq -y && apt-get install -qq build-essential wget < /dev/null > /dev/null
+RUN DEBIAN_FRONTEND=noninteractive apt-get update -qq -y && apt-get install -qq build-essential wget openssh-server < /dev/null > /dev/null
 RUN cd /tmp && \
     wget -q https://dl.google.com/go/go${GOLANG_VERSION}.linux-amd64.tar.gz && \
     tar -xf go${GOLANG_VERSION}.linux-amd64.tar.gz && \
@@ -25,3 +25,4 @@ COPY run_autograder /autograder/run_autograder
 
 # Run the autograder script.
 CMD ["/autograder/run_autograder"]
+
